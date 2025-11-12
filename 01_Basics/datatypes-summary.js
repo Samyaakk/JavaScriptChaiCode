@@ -29,20 +29,26 @@ const myFunction = function(){
 console.log(typeof bigNum);
 console.log(typeof myFunction);
 
+//********************************************** */
 
-//memory 
-//stack (Primitive), Heap(Non-Primitive) 
-// let myYoutubename = "samyakSharma"
-// let anothername = myYoutubename
-// anothername = "chaiaurcode"
-// console.log(anothername)
-// console.log(myYoutubename);
-// let user = {
-//     email: "user@google.com",
-//     upi: "user@ybl"
-// }
-
-// let userTwo  =userOne 
-// userTwo.email = "hitesh@google.com"
-// console.log(userOne.email);
-// console.log(userTwo.email);
+// memory 
+// stack (Primitive), Heap(Non-Primitive) 
+let myYoutubename = "samyakSharma"//primitive values goes to stack 
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(anothername)
+console.log(myYoutubename);
+//object ex. ie. non primitive type goes to heap
+// user varaible goes to stack but the values to heap  
+let user = {
+    email: "user@google.com",
+    upi: "user@ybl",
+    address: "Jaipur"
+}
+console.log(user);
+console.log(user.email);
+//here we are getting the reference so the actual value will be effected as well 
+let userTwo  =user
+userTwo.email = "hitesh@google.com"
+console.log(user.email);
+console.log(userTwo.email);
