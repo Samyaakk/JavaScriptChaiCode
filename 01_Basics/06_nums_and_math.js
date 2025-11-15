@@ -33,3 +33,34 @@ const max = 20
 
 console.log(Math.floor(Math.random()*(max-min+1)) + min)
 
+
+// concepts 
+//only one no type 
+//type of NaN (number)
+
+Number.isNaN(NaN)//true
+Number.isInteger(10.5)//false
+(5.678).toFixed(2)//return a string "5.67"
+parseInt("10px")//10
+
+// due to binary floating point 
+// 0.1+0.2===0.3//false;
+
+// Math object 
+Math.round(4.6)
+Math.floor(4.9)
+Math.ceil(4.1)
+// abs,max,pow,sqrt,
+
+//interview questions 
+//typeof NaN? number 
+// 0.1+0.2 !=0.3 ? -> floating point precision issues 
+//generate a random no btw 1 to 10 
+console.log(Math.Floor(Math.random()*10)+1);
+//toFixed return a string not a number 
+
+console.log(typeof NaN);//number
+console.log(parseInt("15a2"));//15
+console.log(5 + "5");//55
+console.log(Number(" "))//0
+console.log(Math.floor(-4.2))//-5

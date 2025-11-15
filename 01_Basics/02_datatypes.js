@@ -16,8 +16,46 @@ let isLogin = false
 // undefined 
 // symbol => uniqueness 
 
-//object 
 console.log(typeof"sam")
 console.log(typeof name);
 console.log(typeof null);//object
 console.log(typeof undefined);//undefined 
+
+// concepts 
+// primitive -> 
+// stored directly in memory (stack)
+// 7 
+// non primitive -> object ,arrr, functions
+//stored in heap , variable store refernce 
+
+//interview quest 
+// diff in null and undefined ? 
+// null -> assigend intentionally to represent no value 
+// undefined -> variable declared but not assisgned 
+
+//NaN?
+// means not a number but it's type is number 
+
+//type of null? 
+// object 
+
+// BigInt 
+// x = 32324324323232n
+
+//typeof array object 
+
+//tricky question 
+//console.log(typeof null)
+//boject 
+
+//console.log(typeof NaN )
+//number
+
+let a = [1,2,3];
+let b = a;
+b.push(4);
+console.log(a);
+// allowed becoz objects/arrays copy reference 
+
+// typeof undefined -> undefined  
+

@@ -30,3 +30,30 @@ console.log(newDate.getDay());
 newDate.toLocaleString('default',{
     weekday:"long"
 });
+
+
+//creating dates 
+let d = new Date();
+console.log(d);
+let d2 = new Date("2025-02-10")
+console.log(d2);
+d.getFullYear();
+d.getMonth();      // 0 - 11
+d.getDate();       // day of month
+d.getDay();        // 0 = Sunday
+d.getHours();
+d.getMinutes();
+d.getSeconds();
+
+console.log(d.getTime());
+
+
+//imp interview based 
+// month 0 based in js -> inheritied from ealry java
+//coparing dates using 
+// d1.getTime()>d2.getTime()
+//finding diff btw 2 dates 
+let diff = d2-d1;
+let days = diff/(1000*60*60*24);
+
+//compare new Date("dfsdfds")==new Date("dsfsd")//false objects 

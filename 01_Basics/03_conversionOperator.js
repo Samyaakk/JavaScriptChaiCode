@@ -61,3 +61,75 @@ gameCounter++;
 console.log(gameCounter);
 
 
+// concept 
+// Arithmetic → + - * / % **
+// Comparison → == != === !== > >= < <=
+// Logical → && || !
+// Assignment → = += -= *= /=
+// Ternary → condition ? a : b
+// Nullish coalescing → ??
+// Optional chaining → obj?.value
+
+//== checks value after type conversion 
+// === checks type + value (strict) 
+
+// tricky questions 
+console.log(1+"1")//11
+console.log(1-"1")//0
+console.log(true+1)//2
+console.log("5"-"2")//3
+console.log("5"+2)//52
+
+//type conversion 
+// explicit conversion 
+// Number("10")//10
+// String(50)//"50"
+// Boolean("")//false
+
+//implicit conversion (automatically)
+// "10"*2//20
+// "10"+2//"102"
+
+// imp points -> 
+// + prefer string conversion 
+// -,*,/ prefer no. conversion 
+// boolean() on truthy/flasy values 
+// empty arr[] converts to "" or 0 dependign on context 
+
+//tricky ques
+// Number("") //0
+// Number(" ")//0
+// Number(true)//1
+// Number(false)//0
+// Number(null)//0
+// Number(undefined)//NaN
+
+// typeof Operator 
+// tells type of a value 
+// typeof 10        // "number"
+// typeof "hi"      // "string"
+// typeof true      // "boolean"
+// typeof null      // "object"   (JS bug)
+// typeof []        // "object"
+// typeof {}        // "object"
+// typeof undefined // "undefined"
+// typeof function(){} // "function"
+
+
+// Hoisting 
+// js moves declaration to top of scope during compilation 
+//var hoisted with val undefined 
+//let/const hoisted but in tdz 
+//functions are fully hoisted 
+
+// console.log(a);
+// var a = 10;
+// //undefined
+
+// console.log(b); 
+// let b = 10;
+// // ReferenceError
+
+// foo();  
+// function foo(){ console.log("hello") }
+// // hello
