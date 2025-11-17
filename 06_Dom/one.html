@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+    <h1 id="title" class="heading">Dom learning on chai aur code <span style="display:none">test text</span>  </h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet</p>
+    <input type="password" name="Samyak" id="1223196">
+    <ul>
+        <li class ="list-item">one</li>
+        <li class ="list-item">two</li>
+        <li class ="list-item">three</li>
+        
+    </ul>
+    </div>
+</body>
+</html>
+
+<!--
+//document object model (dom)
+ window -> document -> html ->* head ->* body 
+                                |           |
+                -title(text node)         -div -attribute 
+                -meta (attribute)           |
+                                          -h1(attribute,textnode)
+                                          -p(textnode)
+ 
+
+//text node simply means it holds text in it 
+//it's a fancy tech word 
+//thsi diagram shows the dom ie . document object model 
+//it tells us how to reach on that level 
+
+-->
+
+innerText -> only visible content 
+textContent ->  all the content irrespective of display 
+innerHTML -> everything insdie . the code also ie. complete html value 
+
+
+getElementById
+getElementByclassName
+querySelector
